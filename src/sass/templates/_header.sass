@@ -1,2 +1,37 @@
-h1
-  color: gold
+.header
+  &__dart 
+    display: flex
+    width: 100%
+    background-image: url('../image/header/bg-image.jpg')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 100%
+    &::before
+    // width: 100%
+    // height: 100%
+      background: linear-gradient(to top, #00b8d4, #1de9b6 100%)
+      opacity: 0.9
+  &__nav
+    display: flex
+    justify-content: space-between
+    margin-top: 52px
+    color: $light
+  &__list 
+    display: flex
+    list-style: none
+  &__item 
+    margin-left: 49px
+  &__item:first-child
+    margin-left: 0
+  &__nav-button
+    display: flex
+    align-items: center
+    padding: 7px 21px
+    max-height: 25px
+    color: $light
+    cursor: pointer
+    background-color: transparent
+    border: 1px solid #ffffff
+    border-radius: 2px
+  &__content
+    margin-bottom: 187px

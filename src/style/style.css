@@ -332,11 +332,51 @@ template {
   display: none; }
 
 body {
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px; }
+
+a {
+  text-decoration: none;
+  color: #ffffff; }
 
 .container {
   width: 1600px;
   margin: 0 auto; }
 
-h1 {
-  color: gold; }
+.header__dart {
+  display: flex;
+  width: 100%;
+  background-image: url("../image/header/bg-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%; }
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 52px;
+  color: #ffffff; }
+
+.header__list {
+  display: flex;
+  list-style: none; }
+
+.header__item {
+  margin-left: 49px; }
+
+.header__item:first-child {
+  margin-left: 0; }
+
+.header__nav-button {
+  display: flex;
+  align-items: center;
+  padding: 7px 21px;
+  max-height: 25px;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 2px; }
+
+.header__content {
+  margin-bottom: 187px; }
