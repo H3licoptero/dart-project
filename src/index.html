@@ -4,38 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dart Manager Project</title>
+  <link rel="stylesheet" href="fonts/fontawesome/fontawesome-free-5.10.2-web/css/all.min.css">
   <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
   <header class="header header__dart">
     <div class="container">
       <nav class="nav header__nav">
-        <a class="nav__logo" href="#">
-          <img src="image/header/logo.svg" alt="logo">
-        </a>
+        <div class="nav__logo" href="#">
+          <a class="nav__block" href="#">
+            <img class="nav__logo-link" src="image/header/logo-1.svg" alt="logo">
+           <p class="nav__logo-text">
+             <span class="nav__span">Dart</span>
+             service manager
+           </p>
+          </a>
+        </div>
         <ul class="header__list nav__list">
-          <li class="header__item nav__item"><a href="">Home</a></li>
-          <li class="header__item nav__item"><a href="">Service</a></li>
-          <li class="header__item nav__item"><a href="">Extension</a></li>
-          <li class="header__item nav__item"><a href="">Pricing</a></li>
-          <li class="header__item nav__item"><a href="">Help</a></li>
+          <li class="header__item nav__item"><a href="#">Home</a></li>
+          <li class="header__item nav__item"><a href="#">Service</a></li>
+          <li class="header__item nav__item"><a href="#">Extension</a></li>
+          <li class="header__item nav__item"><a href="#">Pricing</a></li>
+          <li class="header__item nav__item"><a href="#">Help</a></li>
         </ul>
         <button class="header__nav-button nav__button">sign up</button>
       </nav>
-      <div class="header__content">
-        <h1 class="header__title">Lorem ipsum dolor sit amet</h1>
-        <p class="header__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos maxime voluptatibus, aliquam voluptas tempora blanditiis nihil beatae iste neque, voluptates ad dolores, eos similique laudantium sit iusto.</p>
-        <div class="header__buttons">
-          <button class="header__buy">buy now</button>
-          <button class="header__try">try for free</button>
+      <div class="header__content-wrapper">
+        <div class="header__content">
+          <h1 class="header__title">Lorem ipsum dolor sit amet</h1>
+          <p class="header__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos maxime voluptatibus, aliquam voluptas tempora blanditiis nihil beatae iste neque, voluptates ad dolores, eos similique laudantium sit iusto.</p>
+          <div class="header__buttons">
+            <button class="header__btn header__buy">buy now</button>
+            <button class="header__btn header__try">try for free</button>
+          </div>
         </div>
+        <div class="header__video">
+          <button class="header__video-btn">
+            <i class="fas fa-play video-icon"></i>
+          </button>
       </div>
-      <div class="header__video">
-        <div class="header__watch-video">
-          <div class="header__video-btn"></div>
-        </div>
       </div>
-    </div>
   </header>
   <script src="script/main.js" defer></script>
 </body>
