@@ -1,0 +1,70 @@
+.section
+  &__reviews
+    background-image: url('../image/reviews/reviews-bg.jpg')
+.reviews
+  &__container
+    display: flex
+    align-items: center 
+    justify-content: space-between
+  &__content
+    display: flex
+    flex-direction: column
+    max-width: 515px
+    width: 100%
+    margin-top: 135px
+    margin-bottom: 141px
+    color: $light
+  &__title
+    margin-bottom: 19px
+    font-size: 45px
+    font-weight: 600
+  &__text
+    margin-bottom: 78px
+    font-size: 15px
+    font-weight: 600
+    line-height: 1.67
+
+.slider
+  &__container
+    overflow-y: hidden
+  &__wrapper
+    display: flex
+    flex-direction: column
+    height: 438px
+  &__item
+    display: flex
+    align-items: center
+    margin-bottom: 70px
+    &:last-child
+      margin-bottom: 0
+  &__content
+    max-width: 650px
+    width: 100%
+    padding: 32px 64px 32px 32px
+    font-size: 15px
+    line-height: 1.67
+    background-color: $light
+    border-radius: 5px
+    box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.15)
+  &__content span
+    display: block
+    margin-bottom: 20px
+    font-size: 18px
+    font-weight: 700
+    line-height: 1.39
+    color: $dark-blue
+  &__content p
+    color: $grey
+  &__image
+    margin-right: 50px
+  &__button
+    display: flex
+    justify-content: center
+    margin-top: 15px
+    margin-bottom: 15px
+    left: 50px
+    font-size: 45px
+  &__button button
+    background-color: transparent
+    border: none
+    color: $light 

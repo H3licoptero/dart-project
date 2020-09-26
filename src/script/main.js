@@ -18,3 +18,40 @@ const accordion = () => {
 };
 
 accordion();
+
+const slider = () => {
+  let container = document.querySelector(".slider__wrapper"),
+    item = document.querySelectorAll(".slider__item"),
+    btn = document.querySelectorAll(".slider__btn");
+
+    let count = 0;
+    let size = item[0].clientHeight;
+
+    container.style.transform = `translateY(${-size * count}px)`;
+
+    const switcher = () => {
+      container.style.transform = `translateY(${-size * count}px)`;
+      container.style.transition = `transform 0.3s ease`;
+    };
+    
+    btn.forEach(el => {
+      el.addEventListener('click', event => {
+        let target = event.target;
+        if (target.matches(".fa-angle-up")) {
+          if(count > item.length - 1) {
+            return;
+          }
+          count++;
+        }
+        if (target.matches(".fa-angle-down")) {
+          if (count < 0) {
+            return;
+          }
+          count--;
+        }
+        switcher();
+      })
+    })
+};
+
+slider();
