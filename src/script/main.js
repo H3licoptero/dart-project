@@ -57,3 +57,28 @@ const slider = () => {
 };
 
 slider();
+
+const toggler = () => {
+  const image = document.querySelectorAll(".team__slider-image"),
+    name = document.querySelectorAll(".team__name");
+
+
+
+    for(let i = 0; i < image.length; i++) {
+      image[i].addEventListener('mouseover', (event) => {
+        let target = event.target;
+        if (image[i].classList.contains("team__slider-image")) {
+          image[i].classList.toggle("team__slider-image--active");
+          // name[i].classList.toggle("team__name--active");
+          for (let j = 0; j < image.length; j++) {
+            if (!image[i]) {
+              image[j].classList.toggle("team__slider-image--active", false);
+              // name[j].classList.toggle("team__name--active", false);
+            }
+          }
+        } 
+      });
+    }
+};
+
+toggler();

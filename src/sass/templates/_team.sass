@@ -1,20 +1,28 @@
 .team
   &__slider
-    max-width: 645px
+    max-width: 700px
     width: 100%
     margin: auto
   &__wrapper
-    margin-bottom: 90px
+    display: flex
+    margin-bottom: 40px
+    justify-content: center
+    align-items: center
+    height: 200px
   &__info 
     text-align: center
   &__name
     display: block
+    // display: none
     margin-bottom: 20px
     font-size: 18px
     font-weight: 700
     line-height: 1.39
     color: $dark-blue
   &__text
+    margin: auto
+    max-width: 645px
+    width: 100%
     margin-bottom: 29px
     font-size: 15px
     font-weight: 400
@@ -30,3 +38,35 @@
     font-size: 20px
   &__social a:last-child
     margin-right: 0
+  &__slider-image
+    display: flex
+    align-items: center
+    max-width: 100px
+    width: 100%
+    height: 160px
+    margin-right: 50px
+    object-fit: cover
+    object-position: center
+    cursor: pointer
+    border-radius: 50%
+    opacity: 0.3
+    overflow: hidden
+    transition: all 0.3s ease
+  &__slider-image:last-child
+    margin-right: 0
+  &__image
+    width: 100%
+    object-fit: contain
+    object-position: center
+  &__slider-image--active
+    max-width: 160px
+    height: 160px
+    border-radius: 50%
+    border: 20px solid $light 
+    box-shadow: 0 0 4px 0.1px #b0bec5
+    opacity: 1
+    object-fit: contain
+    object-position: center
+    transition: all 0.3s ease
+  // &__name--active
+  //   display: block
