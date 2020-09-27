@@ -770,3 +770,42 @@ button {
   background-color: transparent;
   border: none;
   color: #ffffff; }
+
+.team__slider {
+  max-width: 645px;
+  width: 100%;
+  margin: auto; }
+
+.team__wrapper {
+  margin-bottom: 90px; }
+
+.team__info {
+  text-align: center; }
+
+.team__name {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.39;
+  color: #061e37; }
+
+.team__text {
+  margin-bottom: 29px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.67;
+  color: #90a4ae; }
+
+.team__social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 89px; }
+
+.team__social a {
+  color: #90a4ae;
+  margin-right: 25px;
+  font-size: 20px; }
+
+.team__social a:last-child {
+  margin-right: 0; }
