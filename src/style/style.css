@@ -853,3 +853,75 @@ button {
 
 .team__name--active {
   display: block; }
+
+.section__contacts {
+  display: flex;
+  background-color: #fafafa; }
+
+.contacts__header {
+  margin-bottom: 49px; }
+
+.contacts__header-content {
+  color: #061e37; }
+
+.contacts__form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 20px; }
+
+.contacts__name-block, .contacts__mail-block {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px; }
+
+.contacts__name-block input,
+.contacts__mail-block input {
+  min-width: 238px;
+  padding: 19px 20px;
+  border-radius: 5px;
+  border: solid 1px #061e37;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 500;
+  color: #061e37; }
+
+.contacts__name-block input::placeholder,
+.contacts__mail-block input::placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  color: #061e37; }
+
+.contacts__textarea {
+  padding: 20px;
+  width: 100%;
+  border-radius: 5px;
+  border: solid 1px #061e37;
+  background-color: transparent;
+  color: #061e37; }
+
+.contacts__textarea::placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  color: #061e37; }
+
+.contacts__newslatter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 100px; }
+
+.contacts__button {
+  padding: 16px 43px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.15);
+  background-color: #1de9b6; }

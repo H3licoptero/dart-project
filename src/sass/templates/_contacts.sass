@@ -1,0 +1,67 @@
+.section
+  &__contacts
+    display: flex
+    background-color: #fafafa
+.contacts
+  &__header
+    margin-bottom: 49px
+  &__header-content
+    color: $dark-blue
+  &__form
+    display: flex
+    flex-wrap: wrap
+    max-width: 600px
+    width: 100%
+    margin: auto
+    margin-bottom: 20px
+  &__name-block, &__mail-block
+    display: flex
+    justify-content: space-between
+    width: 100%
+    margin-bottom: 20px
+  &__name-block input,
+  &__mail-block input
+    min-width: 238px
+    padding: 19px 20px
+    border-radius: 5px
+    border: solid 1px $dark-blue
+    background-color: transparent
+    font-size: 14px
+    font-weight: 500
+    color: $dark-blue
+  &__name-block input::placeholder,
+  &__mail-block input::placeholder
+    font-size: 14px
+    font-weight: 500
+    color: $dark-blue
+  &__textarea
+    padding: 20px
+    width: 100%
+    border-radius: 5px
+    border: solid 1px $dark-blue
+    background-color: transparent
+    color: $dark-blue
+  &__textarea::placeholder
+    font-size: 14px
+    font-weight: 500
+    color: $dark-blue
+  &__newslatter
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 600px
+    width: 100%
+    margin: auto
+    margin-bottom: 100px
+  &__span
+    // display: flex
+    // flex-wrap: nowrap
+    // align-items: center
+  &__button
+    padding: 16px 43px
+    text-transform: uppercase
+    color: $light
+    border: none
+    border-radius: 5px
+    box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.15)
+    background-color: #1de9b6
