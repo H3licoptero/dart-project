@@ -787,7 +787,7 @@ button {
   text-align: center; }
 
 .team__name {
-  display: block;
+  display: none;
   margin-bottom: 20px;
   font-size: 18px;
   font-weight: 700;
@@ -840,7 +840,7 @@ button {
   object-fit: contain;
   object-position: center; }
 
-.team__slider-image--active {
+.team__slider-image--active, .team .team__slider-image:hover {
   max-width: 160px;
   height: 160px;
   border-radius: 50%;
@@ -850,3 +850,6 @@ button {
   object-fit: contain;
   object-position: center;
   transition: all 0.3s ease; }
+
+.team__name--active {
+  display: block; }

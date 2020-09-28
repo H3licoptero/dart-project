@@ -12,8 +12,8 @@
   &__info 
     text-align: center
   &__name
-    display: block
-    // display: none
+    // display: block
+    display: none
     margin-bottom: 20px
     font-size: 18px
     font-weight: 700
@@ -58,7 +58,7 @@
     width: 100%
     object-fit: contain
     object-position: center
-  &__slider-image--active
+  &__slider-image--active, .team__slider-image:hover
     max-width: 160px
     height: 160px
     border-radius: 50%
@@ -68,5 +68,5 @@
     object-fit: contain
     object-position: center
     transition: all 0.3s ease
-  // &__name--active
-  //   display: block
+  &__name--active
+    display: block
