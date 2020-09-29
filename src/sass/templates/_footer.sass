@@ -1,0 +1,35 @@
+.footer
+  background-color: $dark-blue
+  &__container
+    display: flex
+    flex-wrap: wrap
+  &__header, &__nav
+    margin-top: 96px
+    margin-bottom: 52px
+    width: 100%
+  &__nav
+    margin-bottom: 0
+  &__policy
+    display: flex
+    justify-content: space-between
+    width: 100%
+  &__list-policy
+    display: flex
+    max-width: 312px
+    width: 100%
+    padding-left: 0
+  &__policy-item a
+    opacity: 0.5    
+  &__list-policy
+    list-style-type: none
+  &__policy-item:before
+    content: counter(item, disc) " "
+    color: $light
+    padding: 0 19px 0 19px
+    width: 6px
+    height: 6px
+  &__policy-item:first-child:before
+    content: ''
+    padding: 0
+  &__team-socials
+    opacity: 0.2

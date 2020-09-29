@@ -460,7 +460,7 @@ button {
   position: relative;
   max-width: 600px;
   width: 100%;
-  min-height: 320px;
+  height: 320px;
   box-shadow: 0px 10px 20px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   border: 1px solid #061e37;
@@ -917,6 +917,12 @@ button {
   margin: auto;
   margin-bottom: 100px; }
 
+.contacts__span {
+  margin-left: 9px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #061e37; }
+
 .contacts__button {
   padding: 16px 43px;
   text-transform: uppercase;
@@ -925,3 +931,48 @@ button {
   border-radius: 5px;
   box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.15);
   background-color: #1de9b6; }
+
+.contacts__check {
+  display: flex;
+  align-items: center; }
+
+.contacts__checkbox {
+  height: 16px;
+  width: 16px;
+  border-color: #061e37; }
+
+.footer {
+  background-color: #061e37; }
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap; }
+  .footer__header, .footer__nav {
+    margin-top: 96px;
+    margin-bottom: 52px;
+    width: 100%; }
+  .footer__nav {
+    margin-bottom: 0; }
+  .footer__policy {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; }
+  .footer__list-policy {
+    display: flex;
+    max-width: 312px;
+    width: 100%;
+    padding-left: 0; }
+  .footer__policy-item a {
+    opacity: 0.5; }
+  .footer__list-policy {
+    list-style-type: none; }
+  .footer__policy-item:before {
+    content: counter(item, disc) " ";
+    color: #ffffff;
+    padding: 0 19px 0 19px;
+    width: 6px;
+    height: 6px; }
+  .footer__policy-item:first-child:before {
+    content: '';
+    padding: 0; }
+  .footer__team-socials {
+    opacity: 0.2; }

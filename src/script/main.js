@@ -65,22 +65,42 @@ const toggler = () => {
   for(let j = 0; j < image.length; j++) {
     image[j].addEventListener('click', (event) => {
       event.preventDefault();
-      // if (
-      //   image[j].matches(".team__slider-image--active") && 
-      //   image[j].matches(".team__slider-image")
-      // ) {
-      //   // image[j].classList.remove("team__slider-image--active");
-      //   // name[j].classList.remove("team__name--active");
-      // } else {
         for (let i = 0; i < image.length; i++) {
           image[i].classList.remove("team__slider-image--active");
           name[i].classList.remove("team__name--active");
         }
         image[j].classList.add("team__slider-image--active");
         name[j].classList.add("team__name--active");
-      // }
     });
   }
 };
 
 toggler();
+
+
+const video = () => {
+  const button = document.querySelector(".header__video-btn"),
+    bg = document.querySelector(".header__video");
+
+  button.addEventListener('click', (event) => {
+    let target = event.target;
+    if(target) {
+      button.style.display = `none`;
+      bg.insertAdjacentHTML(
+        `afterbegin`,
+        `<iframe width="100%" height="320" src="https://www.youtube.com/embed/Eh62VlxroNk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+      );
+    }
+  });
+};
+
+video();
+
+{/* <iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/5-LyRjHlRgQ"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>; */}
