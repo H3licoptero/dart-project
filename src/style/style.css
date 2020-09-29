@@ -368,6 +368,25 @@ button {
   width: 1600px;
   margin: 0 auto; }
 
+@media screen and (max-width: 1920px) {
+  .header__item a {
+    position: relative;
+    transition: all 0.2s ease; }
+  .header__item a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #061e37;
+    transition: all 0.3s ease; }
+  .header__item a:hover::after, .header__item a:hover {
+    width: 100%;
+    color: #061e37;
+    transition: all 0.2s ease; } }
+
 .header__dart {
   position: relative;
   display: flex;

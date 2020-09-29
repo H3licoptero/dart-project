@@ -1,0 +1,19 @@
+@media screen and ( max-width: 1920px )
+  .header
+    &__item a
+      position: relative
+      transition: all 0.2s ease
+    &__item a::after
+      content: ''
+      display: block
+      position: absolute
+      top: 20px
+      left: 0
+      width: 0
+      height: 2px
+      background-color: $dark-blue
+      transition: all 0.3s ease
+    &__item a:hover::after, &__item a:hover
+      width: 100%
+      color: $dark-blue
+      transition: all 0.2s ease

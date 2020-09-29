@@ -88,7 +88,7 @@ const video = () => {
       button.style.display = `none`;
       bg.insertAdjacentHTML(
         `afterbegin`,
-        `<iframe width="100%" height="320" src="https://www.youtube.com/embed/Eh62VlxroNk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+        `<iframe width="100%" height="320px" src="https://www.youtube.com/embed/LEK2R58xdsk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
       );
     }
   });
@@ -96,11 +96,24 @@ const video = () => {
 
 video();
 
-{/* <iframe
-  width="560"
-  height="315"
-  src="https://www.youtube.com/embed/5-LyRjHlRgQ"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen
-></iframe>; */}
+const scroll = () => {
+  const links = document.querySelectorAll(
+    `a[href="#home"], a[href="#service"], a[href="#slider"], 
+    a[href="#help"], a[href="#team"]`
+  );
+  links.forEach(el => {
+    el.addEventListener("click", event => {
+      event.preventDefault();
+      let target = event.target;
+      let anchors = el.getAttribute("href").substr(1);
+      if(target) {
+        document.getElementById(anchors).scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        })
+      }
+    })
+  })
+};
+
+scroll();
