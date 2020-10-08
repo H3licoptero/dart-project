@@ -3,7 +3,9 @@
     max-width: 700px
     width: 100%
     margin: auto
+    // position: relative
   &__wrapper
+    // position: absolute
     display: flex
     margin-bottom: 40px
     justify-content: center
@@ -12,7 +14,6 @@
   &__info 
     text-align: center
   &__name
-    // display: block
     display: none
     margin-bottom: 20px
     font-size: 18px
@@ -51,7 +52,7 @@
     border-radius: 50%
     opacity: 0.3
     overflow: hidden
-    transition: all 0.3s ease
+    transition: max-width 0.3s ease
   &__slider-image:last-child
     margin-right: 0
   &__image
@@ -61,12 +62,13 @@
   &__slider-image--active, .team__slider-image:hover
     max-width: 160px
     height: 160px
+    width: 100%
     border-radius: 50%
     border: 20px solid $light 
     box-shadow: 0 0 4px 0.1px #b0bec5
     opacity: 1
     object-fit: contain
     object-position: center
-    transition: all 0.3s ease
+    transition: max-width 0.3s ease
   &__name--active
     display: block

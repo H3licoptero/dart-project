@@ -7,11 +7,14 @@ const accordion = () => {
       content[i].style.transition = "all 0.3s ease";
       if (content[i].style.height) {
         content[i].style.height = null;
+        content[i].style.paddingBottom = null; 
       } else {
         for (let j = 0; j < header.length; j++) {
           content[j].style.height = null;
+          content[j].style.paddingBottom = null; 
         }
         content[i].style.height = `${content[i].scrollHeight}px`;
+        content[i].style.paddingBottom = '20px'; 
       }
     });
   }
@@ -78,7 +81,7 @@ const toggler = () => {
 toggler();
 
 
-const video = () => {
+const videoPlay = () => {
   const button = document.querySelector(".header__video-btn"),
     bg = document.querySelector(".header__video");
 
@@ -94,7 +97,7 @@ const video = () => {
   });
 };
 
-video();
+videoPlay();
 
 const scroll = () => {
   const links = document.querySelectorAll(
@@ -117,3 +120,55 @@ const scroll = () => {
 };
 
 scroll();
+
+const objectCreate = () => {
+
+const contactsLastname = document.querySelector(".contacts__lastname");
+const contactsUsername = document.querySelector(".contacts__username");
+const contactsEmail = document.querySelector(".contacts__email");
+const contactsPhone = document.querySelector(".contacts__phone");
+const contactsMessage = document.querySelector(".contacts__textarea");
+const contactsForm = document.querySelectorAll(".contacts__form input, .contacts__textarea"
+);
+
+  let obj = () => {
+   let name = contactsUsername.value,
+    lastName = contactsLastname.value,
+    email = contactsEmail.value,
+    phone = contactsPhone.value,
+    message = contactsMessage.value;
+    return {
+      "First Name": name,
+      "Last Name": lastName,
+      "Email": email,
+      "Phone": phone,
+      "Message": message,
+    };
+  };
+  let copy;
+  contactsForm.forEach(el => {
+    el.addEventListener("change", () => {
+      copy = obj();
+      console.log(copy);
+    });
+  });
+};
+
+objectCreate();
+
+const scrollShow = () => {
+  const btnTop = document.querySelector(".button__block");
+  window.addEventListener('scroll', () => {
+    let positionTop = 0 + 'px'; 
+    let count = -500 + 'px';
+    let top = document.documentElement.getBoundingClientRect().top + 'px';
+    if(top === count) {
+      btnTop.style.display = 'block';
+      btnTop.style.transition = 'display 0.3s ease'
+    } else if(top === positionTop){
+      btnTop.style.display = "none";
+    }
+  });
+};
+
+scrollShow();
