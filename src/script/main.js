@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     btn.forEach((el) => {
       el.addEventListener("click", (event) => {
+        event.preventDefault();
         let target = event.target;
         if (target.matches(".fa-angle-up")) {
           if (count >= item.length - 2) {
@@ -93,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
         button.style.display = `none`;
         bg.insertAdjacentHTML(
           `afterbegin`,
-          `<iframe width="100%" height="320px" src="https://www.youtube.com/embed/LEK2R58xdsk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+          `<iframe width="100%" height="100%" src="https://www.youtube.com/embed/LEK2R58xdsk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
         );
       }
     });
@@ -166,7 +167,7 @@ document.addEventListener("DOMContentLoaded", () => {
       let top = document.documentElement.getBoundingClientRect().top + 'px';
       if(top === count) {
         btnTop.style.display = 'block';
-        btnTop.style.transition = 'display 0.3s ease'
+        btnTop.style.transition = 'all 0.3s ease'
       } else if(top === positionTop){
         btnTop.style.display = "none";
       }
