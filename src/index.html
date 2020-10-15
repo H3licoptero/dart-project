@@ -436,29 +436,29 @@
         <form class="contacts__form" action="#">
           <div class="contacts__name-block">
             <label for="contacts__username" class="contacts__first-name">
-              <input class="contacts__username" type="text" placeholder="First Name">
+              <input class="contacts__username" name="contacts__username" type="text" placeholder="First Name">
             </label>
             <label for="contacts__lastname" class="contacts__last-name">
-              <input class="contacts__lastname" type="text" placeholder="Last Name">
+              <input class="contacts__lastname" name="contacts__lastname" type="text" placeholder="Last Name">
             </label>
           </div>
           <div class="contacts__mail-block">
             <label for="contacts__email" class="contacts__usermail">
-              <input class="contacts__email" type="text" placeholder="Email">
+              <input class="contacts__email" name="contacts__email" type="email" placeholder="Email">
             </label>
             <label for="contacts__phone" class="contacts__userphone">
-              <input class="contacts__phone" type="text" placeholder="Phone">
+              <input class="contacts__phone" name="contacts__phone" type="tel" placeholder="Phone">
             </label>
           </div>
           <textarea class="contacts__textarea" name="" id="textField" cols="30" rows="10" placeholder="Message"></textarea>
+          <div class="contacts__newslatter">
+            <label for="contacts__checkbox" class="contacts__check">
+              <input class="contacts__checkbox" type="checkbox" checked>
+              <span class="contacts__span">subscribe to the newsletter</span>
+            </label>
+            <button class="contacts__button" for="contacts__form" name="" type="submit">Send</button>
+          </div>
         </form>
-        <div class="contacts__newslatter">
-          <label for="contacts__checkbox" class="contacts__check">
-            <input class="contacts__checkbox" type="checkbox">
-            <span class="contacts__span">subscribe to the newsletter</span>
-          </label>
-          <button class="contacts__button" type="submit">Send</button>
-        </div>
       </div>
     </section>
   </main>

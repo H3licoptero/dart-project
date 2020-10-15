@@ -161,15 +161,16 @@ document.addEventListener("DOMContentLoaded", () => {
   
   const scrollShow = () => {
     const btnTop = document.querySelector(".button__block");
-    window.addEventListener('scroll', () => {
+    window.addEventListener('scroll', (event) => {
+      event.preventDefault();
       let positionTop = 0 + 'px'; 
-      let count = -500 + 'px';
-      let top = document.documentElement.getBoundingClientRect().top + 'px';
-      if(top === count) {
-        btnTop.style.display = 'block';
-        btnTop.style.transition = 'all 0.3s ease'
+      let count = 500 + 'px';
+      let top = pageYOffset + 'px';
+      
+      if(top >= count) {
+        btnTop.style.opacity = 1;
       } else if(top === positionTop){
-        btnTop.style.display = "none";
+        btnTop.style.opacity = 0;
       }
     });
   };

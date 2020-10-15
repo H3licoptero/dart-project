@@ -855,7 +855,7 @@ button {
   max-width: 600px;
   width: 100%;
   margin: auto;
-  margin-bottom: 20px; }
+  margin-bottom: 100px; }
 
 .contacts__name-block, .contacts__mail-block {
   display: flex;
@@ -886,7 +886,8 @@ button {
   border-radius: 5px;
   border: solid 1px #061e37;
   background-color: transparent;
-  color: #061e37; }
+  color: #061e37;
+  margin-bottom: 20px; }
 
 .contacts__textarea::placeholder {
   font-size: 14px;
@@ -899,8 +900,7 @@ button {
   align-items: center;
   max-width: 600px;
   width: 100%;
-  margin: auto;
-  margin-bottom: 100px; }
+  margin: auto; }
 
 .contacts__span {
   margin-left: 9px;
@@ -964,7 +964,8 @@ button {
 
 .button__block {
   position: relative;
-  display: none; }
+  opacity: 0;
+  transition: all 0.6s ease; }
 
 .button__top {
   position: fixed;
@@ -1133,3 +1134,7 @@ button {
     font-size: 12px; }
   .tool__footer-item {
     padding: 28px 20px; } }
+
+@media screen and (max-width: 968px) {
+  .container {
+    width: 860px; } }
