@@ -1,3 +1,5 @@
 [1013/111158.711:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
 [1014/193734.781:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
 [1015/113921.926:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1016/114514.605:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\Helicoptero\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\a84371fb-d26d-4a4b-a596-57c149ce58e2: Системе не удается найти указанный путь. (0x3)
+[1016/115029.939:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)

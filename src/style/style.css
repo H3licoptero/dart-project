@@ -586,8 +586,12 @@ button {
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 700; }
-  .tool__footer {
+  .tool__footer-container {
     display: flex;
+    width: 100%; }
+  .tool__footer-inner {
+    display: flex;
+    max-width: 230px;
     width: 100%; }
   .tool__footer-item {
     display: flex;
@@ -822,7 +826,8 @@ button {
 .team__image {
   width: 100%;
   object-fit: contain;
-  object-position: center; }
+  object-position: center;
+  border-radius: 50%; }
 
 .team__slider-image--active, .team .team__slider-image:hover {
   max-width: 160px;
@@ -1073,7 +1078,7 @@ button {
   .header__text {
     max-width: 510px; }
   .tool__footer-item {
-    padding: 38px 60px; }
+    padding: 38px 55px; }
   .slider__content {
     padding: 21px 30px 21px 30px; }
   .slider__item {
@@ -1137,4 +1142,18 @@ button {
 
 @media screen and (max-width: 968px) {
   .container {
-    width: 860px; } }
+    width: 860px; }
+  .header__btn {
+    font-size: 12px; }
+  .tool__footer-container {
+    flex-wrap: wrap;
+    width: 100%; }
+  .tool__footer-inner {
+    margin: auto; }
+  .tool__footer-item {
+    flex-basis: 50%;
+    padding: 28px 0; } }
+
+@media screen and (max-width: 876px) {
+  .container {
+    width: 768px; } }
