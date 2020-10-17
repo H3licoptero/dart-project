@@ -975,7 +975,7 @@ button {
 .button__top {
   position: fixed;
   bottom: 230px;
-  right: 50px;
+  right: 30px;
   border-radius: 50%;
   border: solid 1px #90a4ae;
   width: 45px;
@@ -1156,4 +1156,44 @@ button {
 
 @media screen and (max-width: 876px) {
   .container {
-    width: 768px; } }
+    width: 768px; }
+  .header__nav {
+    align-items: center; }
+  .header__list {
+    padding-left: 0; }
+  .header__item {
+    margin-left: 30px; }
+  .header__content {
+    margin-bottom: 60px; }
+  .header__title, .header__text {
+    margin: auto;
+    margin-bottom: 12px;
+    text-align: center; }
+  .header__title {
+    max-width: 392px; }
+  .header__text {
+    margin-bottom: 40px; }
+  .header__buttons {
+    text-align: center; }
+  .header__content-wrapper {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px; }
+  .tool__header {
+    max-width: 380px; }
+  .tool__content {
+    flex-direction: column;
+    align-items: center; }
+  .reviews__content {
+    text-align: center; }
+  .slider__wrapper {
+    height: 300px; }
+  .service__accordion {
+    max-width: 600px; }
+  .team__text {
+    max-width: 445px; } }
+
+@media screen and (max-width: 786px) {
+  .container {
+    max-width: 660px; } }
