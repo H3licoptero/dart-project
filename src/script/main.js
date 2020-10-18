@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
   accordion();
   
-  const slider = () => {
+  function slider(){
     const container = document.querySelector(".slider__wrapper"),
       item = document.querySelectorAll(".slider__item"),
       btn = document.querySelectorAll(".slider__btn");
@@ -176,4 +176,25 @@ document.addEventListener("DOMContentLoaded", () => {
   };
   
   scrollShow();
+
+  function burger() {
+    let line = document.querySelector(".nav__burger-firstLine"),
+      lineSecond = document.querySelector(".nav__burger-secondLine"),
+      lineThird = document.querySelector(".nav__burger-thirdLine"),
+      burger = document.querySelector(".header__burger");
+
+      burger.addEventListener('click', (event) => {
+        let target = event.target;
+        if(target) {
+          lineSecond.classList.toggle('second');
+          line.classList.toggle('first');
+          lineThird.classList.toggle('third');
+        } 
+        line.style.transition = 'transform 0.3s ease'
+        lineSecond.style.transition = "transform 0.3s ease";
+        lineThird.style.transition = "transform 0.3s ease";
+    });
+  }
+
+  burger();
 });

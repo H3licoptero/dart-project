@@ -233,6 +233,40 @@
 @media screen and ( max-width: 786px )
   .container
     max-width: 660px
-  
-  
-  
+@media screen and ( max-width: 678px )
+  .container
+    max-width: 560px
+  .header
+    &__burger
+      position: relative
+      display: flex
+      height: 30px
+  .nav
+    &__list
+      display: none  
+    &__burger-firstLine,
+    &__burger-secondLine,
+    &__burger-thirdLine
+      position: absolute
+      top: 10px
+      width: 35px
+      height: 4px
+      background-color: #fff
+      border-radius: 5px
+    &__burger-firstLine
+      top: 0
+    &__burger-secondLine
+      top: 10px
+    &__burger-thirdLine
+      top: 20px    
+    &__button
+      display: none
+  .slider
+    &__wrapper
+      height: 330px
+  .footer
+    &__list
+      display: flex
+  .contacts__name-block input,
+  .contacts__mail-block input
+    min-width: 230px

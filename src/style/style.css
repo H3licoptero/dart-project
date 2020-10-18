@@ -520,6 +520,18 @@ button {
   flex-direction: row;
   font-weight: 400; }
 
+.nav__burger {
+  display: none; }
+
+.first {
+  transform: translateY(10px) rotate(45deg); }
+
+.second {
+  transform: rotate(45deg); }
+
+.third {
+  transform: translateY(-10px) rotate(-45deg); }
+
 .tool {
   overflow-x: none; }
   .tool__header {
@@ -1197,3 +1209,35 @@ button {
 @media screen and (max-width: 786px) {
   .container {
     max-width: 660px; } }
+
+@media screen and (max-width: 678px) {
+  .container {
+    max-width: 560px; }
+  .header__burger {
+    position: relative;
+    display: flex;
+    height: 30px; }
+  .nav__list {
+    display: none; }
+  .nav__burger-firstLine, .nav__burger-secondLine, .nav__burger-thirdLine {
+    position: absolute;
+    top: 10px;
+    width: 35px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 5px; }
+  .nav__burger-firstLine {
+    top: 0; }
+  .nav__burger-secondLine {
+    top: 10px; }
+  .nav__burger-thirdLine {
+    top: 20px; }
+  .nav__button {
+    display: none; }
+  .slider__wrapper {
+    height: 330px; }
+  .footer__list {
+    display: flex; }
+  .contacts__name-block input,
+  .contacts__mail-block input {
+    min-width: 230px; } }
