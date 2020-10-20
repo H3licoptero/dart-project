@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  
+  "use strict";
   const accordion = () => {
     let header = document.querySelectorAll(".accordion__header"),
       content = document.querySelectorAll(".accordion__content");

@@ -241,9 +241,20 @@
       position: relative
       display: flex
       height: 30px
+      width: 40px
   .nav
     &__list
       display: none  
+      flex-direction: column
+      border: 1px solid $light
+      border-radius: 5px
+      padding: 7px 15px 
+      background-color: rgba($light, 0.2)
+    &__item
+      margin-left: 0
+      margin-bottom: 14px
+    &__item:last-child
+      margin-bottom: 0
     &__burger-firstLine,
     &__burger-secondLine,
     &__burger-thirdLine
@@ -264,9 +275,13 @@
   .slider
     &__wrapper
       height: 330px
+    &__item
+      margin-bottom: 35px
   .footer
-    &__list
+    &__list 
       display: flex
+    &__item
+      margin-right: 15px
   .contacts__name-block input,
   .contacts__mail-block input
     min-width: 230px

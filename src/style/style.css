@@ -394,12 +394,17 @@ button {
 .header__nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 52px;
   margin-bottom: 167px;
   color: #ffffff; }
 
+.header__burger {
+  display: none; }
+
 .header__list {
   display: flex;
+  padding-left: 0;
   list-style: none; }
 
 .header__item {
@@ -1216,9 +1221,20 @@ button {
   .header__burger {
     position: relative;
     display: flex;
-    height: 30px; }
+    height: 30px;
+    width: 40px; }
   .nav__list {
-    display: none; }
+    display: none;
+    flex-direction: column;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 7px 15px;
+    background-color: rgba(255, 255, 255, 0.2); }
+  .nav__item {
+    margin-left: 0;
+    margin-bottom: 14px; }
+  .nav__item:last-child {
+    margin-bottom: 0; }
   .nav__burger-firstLine, .nav__burger-secondLine, .nav__burger-thirdLine {
     position: absolute;
     top: 10px;
@@ -1236,8 +1252,12 @@ button {
     display: none; }
   .slider__wrapper {
     height: 330px; }
+  .slider__item {
+    margin-bottom: 35px; }
   .footer__list {
     display: flex; }
+  .footer__item {
+    margin-right: 15px; }
   .contacts__name-block input,
   .contacts__mail-block input {
     min-width: 230px; } }
