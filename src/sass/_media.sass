@@ -242,14 +242,39 @@
       display: flex
       height: 30px
       width: 40px
+    // &__nav
+    //   position: relative
   .nav
     &__list
-      display: none  
+      position: absolute
+      opacity: 0
+      // display: none  
+      height: 0
+      visibility: hidden
       flex-direction: column
-      border: 1px solid $light
       border-radius: 5px
-      padding: 7px 15px 
+      padding: 10px 20px 
       background-color: rgba($light, 0.2)
+      top: 100px
+      right: 55px
+      transition: all 0.6s ease 
+    &__list--active
+      opacity: 1
+      height: 122px
+      visibility: visible
+      // display: block
+      transition: all 0.6s ease 
+    &__list::before
+      position: absolute
+      content: ""
+      top: 10px
+      width: 0
+      height: 0
+      border: 10px solid transparent
+      border-bottom-color: $light
+      top: calc( 50% - 91px )
+      right: 10px 
+      opacity: 0.2
     &__item
       margin-left: 0
       margin-bottom: 14px

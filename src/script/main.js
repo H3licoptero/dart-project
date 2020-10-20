@@ -181,7 +181,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let line = document.querySelector(".nav__burger-firstLine"),
       lineSecond = document.querySelector(".nav__burger-secondLine"),
       lineThird = document.querySelector(".nav__burger-thirdLine"),
-      burger = document.querySelector(".header__burger");
+      burger = document.querySelector(".header__burger"),
+      navList = document.querySelector(".nav__list");
 
       burger.addEventListener('click', (event) => {
         let target = event.target;
@@ -189,6 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
           lineSecond.classList.toggle('second');
           line.classList.toggle('first');
           lineThird.classList.toggle('third');
+          navList.classList.toggle('nav__list--active');
         } 
         line.style.transition = 'transform 0.3s ease'
         lineSecond.style.transition = "transform 0.3s ease";
