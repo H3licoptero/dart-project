@@ -1217,7 +1217,7 @@ button {
 
 @media screen and (max-width: 678px) {
   .container {
-    max-width: 560px; }
+    max-width: 540px; }
   .header__burger {
     position: relative;
     display: flex;
@@ -1281,4 +1281,54 @@ button {
     margin-right: 15px; }
   .contacts__name-block input,
   .contacts__mail-block input {
-    min-width: 230px; } }
+    min-width: 220px; } }
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 365px; }
+  .tool__footer-item {
+    flex-basis: 100%; }
+  .contacts__name-block, .contacts__mail-block {
+    flex-wrap: wrap; }
+  .contacts__name-block input, .contacts__mail-block input {
+    width: 100%;
+    min-width: 281px; }
+  .contacts__username, .contacts__email {
+    margin-bottom: 20px; }
+  .footer__list {
+    display: none; }
+  .footer__policy {
+    flex-wrap: wrap;
+    justify-content: center; }
+  .footer__list-policy {
+    margin-bottom: 52px;
+    justify-content: center; }
+  .team__slider-image {
+    margin-right: 10px; }
+  .team__slider-image--active, .team .team__slider-image:hover {
+    border: 1px solid #ffffff;
+    border: none;
+    box-shadow: none; }
+  .accordion__content {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 300px;
+    margin: auto; } }
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 310px; }
+  .header__btn {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 0; }
+  .header__video-btn {
+    margin: 23% auto; }
+  .nav__list {
+    right: 35px;
+    top: 85px; }
+  .contacts__name-block input, .contacts__mail-block input {
+    width: 100%;
+    min-width: 226px; }
+  .button__top {
+    right: 10px; } }

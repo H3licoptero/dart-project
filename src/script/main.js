@@ -195,7 +195,7 @@ document.addEventListener("DOMContentLoaded", () => {
         line.style.transition = 'transform 0.3s ease'
         lineSecond.style.transition = "transform 0.3s ease";
         lineThird.style.transition = "transform 0.3s ease";
-    });
+      });
   }
 
   burger();

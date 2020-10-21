@@ -235,7 +235,7 @@
     max-width: 660px
 @media screen and ( max-width: 678px )
   .container
-    max-width: 560px
+    max-width: 540px
   .header
     &__burger
       position: relative
@@ -309,4 +309,66 @@
       margin-right: 15px
   .contacts__name-block input,
   .contacts__mail-block input
-    min-width: 230px
+    min-width: 220px
+@media screen and ( max-width: 576px )
+  .container
+    width: 365px 
+  .tool
+    &__footer-item
+      flex-basis: 100%
+  .contacts
+    &__name-block, &__mail-block
+      flex-wrap: wrap
+  .contacts
+    &__name-block input, &__mail-block input
+      width: 100%
+      min-width: 281px
+  .contacts
+    &__username, &__email
+      margin-bottom: 20px
+  .footer
+    &__list
+      display: none
+    &__policy
+      flex-wrap: wrap
+      justify-content: center
+    &__list-policy
+      margin-bottom: 52px
+      justify-content: center
+  .team
+    &__slider-image
+      margin-right: 10px
+    &__slider-image--active, .team__slider-image:hover
+      // max-width: 100%
+      // height: 5%
+      border: 1px solid $light
+      border: none
+      box-shadow: none
+  .accordion
+    &__content
+      flex-wrap: wrap
+      justify-content: center
+      max-width: 300px
+      margin: auto
+      // margin-left: 0
+@media screen and ( max-width: 375px )
+  .container
+    width: 310px
+  .header
+    &__btn
+      width: 100%
+      margin-bottom: 10px
+      margin-right: 0
+    &__video-btn
+      margin: 23% auto
+  .nav
+    &__list
+      right: 35px
+      top: 85px
+  .contacts
+    &__name-block input, &__mail-block input
+      width: 100%
+      min-width: 226px
+  .button
+    &__top
+      right: 10px
