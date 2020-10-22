@@ -13,8 +13,8 @@
   <header class="header header__dart" id="home">
     <div class="container">
       <nav class="nav header__nav">
-        <div class="nav__logo" href="#">
-          <a class="nav__block" href="#">
+        <div class="nav__logo">
+          <a class="nav__block" href="http://www.nikolaevvitaliy.ru/dart-project/src/">
             <img class="nav__logo-link" src="image/header/logo-1.svg" alt="logo">
             <p class="nav__logo-text">
               <span class="nav__span">Dart</span>
@@ -53,8 +53,9 @@
           </button>
         </div>
       </div>
+    </div>
   </header>
-  
+
   <main class="main">
     <div class="tool">
       <div class="container tool__container">
@@ -117,7 +118,7 @@
                 <span>Downloads</span>
               </div>
             </div>
-            </div>
+          </div>
           <div class="tool__footer-item tool__footer-item-3">
             <div class="tool__footer-inner">
               <div class="tool__footer-img tool__footer-img-3">
@@ -450,28 +451,27 @@
         </div>
         <form class="contacts__form" action="#">
           <div class="contacts__name-block">
-            <label for="contacts__username" class="contacts__first-name">
-              <input class="contacts__username" name="contacts__username" type="text" placeholder="First Name">
-            </label>
-            <label for="contacts__lastname" class="contacts__last-name">
-              <input class="contacts__lastname" name="contacts__lastname" type="text" placeholder="Last Name">
-            </label>
+            <input class="contacts__username" name="contactsUsername" id="contacts-username" type="text"
+            placeholder="First Name">
+            <label for="contacts-username" class="contacts__first-name"></label>
+            <label for="contacts-lastname" class="contacts__last-name"></label>
+            <input class="contacts__lastname" name="contactsLastname" id="contacts-lastname" type="text"
+              placeholder="Last Name">
           </div>
           <div class="contacts__mail-block">
-            <label for="contacts__email" class="contacts__usermail">
-              <input class="contacts__email" name="contacts__email" type="email" placeholder="Email">
-            </label>
-            <label for="contacts__phone" class="contacts__userphone">
-              <input class="contacts__phone" name="contacts__phone" type="tel" placeholder="Phone">
-            </label>
+            <input class="contacts__email" name="contactsEmail" id="contacts-email" type="email" placeholder="Email">
+            <label for="contacts-email" class="contacts__usermail"></label>
+            <label for="contacts-phone" class="contacts__userphone"></label>
+            <input class="contacts__phone" name="contacts-phone" id="contacts-phone" type="tel" placeholder="Phone">
           </div>
-          <textarea class="contacts__textarea" name="" id="textField" cols="30" rows="10" placeholder="Message"></textarea>
+          <textarea class="contacts__textarea" name="contacts-textarea" id="textField" cols="30" rows="10"
+            placeholder="Message"></textarea>
           <div class="contacts__newslatter">
             <label for="contacts__checkbox" class="contacts__check">
               <input class="contacts__checkbox" type="checkbox" checked>
               <span class="contacts__span">subscribe to the newsletter</span>
             </label>
-            <button class="contacts__button" for="contacts__form" name="" type="submit">Send</button>
+            <button class="contacts__button" type="submit">Send</button>
           </div>
         </form>
       </div>
@@ -482,8 +482,8 @@
     <div class="container footer__container">
       <div class="footer__header">
         <nav class="nav header__nav footer__nav">
-          <div class="nav__logo footer__logo" href="#">
-            <a class="nav__block footer__block" href="#">
+          <div class="nav__logo footer__logo">
+            <a class="nav__block footer__block" href="http://www.nikolaevvitaliy.ru/dart-project/src/">
               <img class="nav__logo-link footer__logo-link" src="image/header/logo-1.svg" alt="logo">
               <p class="nav__logo-text footer__logo-text">
                 <span class="nav__span footer__span">Dart</span>

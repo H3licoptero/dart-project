@@ -67,16 +67,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const toggler = () => {
     const image = document.querySelectorAll(".team__slider-image"),
       name = document.querySelectorAll(".team__name");
-  
-    for(let j = 0; j < image.length; j++) {
-      image[j].addEventListener('click', (event) => {
-        event.preventDefault();
+      
+      for(let j = 0; j < image.length; j++) {
+        image[j].addEventListener('click', (event) => {
+          event.preventDefault();
           for (let i = 0; i < image.length; i++) {
             image[i].classList.remove("team__slider-image--active");
             name[i].classList.remove("team__name--active");
           }
           image[j].classList.add("team__slider-image--active");
           name[j].classList.add("team__name--active");
+          // image[j].style.transition ='transform 0.3s ease';
       });
     }
   };

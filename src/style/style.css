@@ -827,15 +827,12 @@ button {
   align-items: center;
   max-width: 100px;
   width: 100%;
-  height: 160px;
   margin-right: 50px;
-  object-fit: cover;
-  object-position: center;
   cursor: pointer;
   border-radius: 50%;
   opacity: 0.3;
   overflow: hidden;
-  transition: max-width 0.3s ease; }
+  transition: transform 0.3s ease, opacity 0.2s ease; }
 
 .team__slider-image:last-child {
   margin-right: 0; }
@@ -846,17 +843,15 @@ button {
   object-position: center;
   border-radius: 50%; }
 
-.team__slider-image--active, .team .team__slider-image:hover {
-  max-width: 160px;
-  height: 160px;
-  width: 100%;
+.team__slider-image--active {
   border-radius: 50%;
   border: 20px solid #ffffff;
   box-shadow: 0 0 4px 0.1px #b0bec5;
   opacity: 1;
-  object-fit: contain;
-  object-position: center;
-  transition: max-width 0.3s ease; }
+  transform: scale(1.4); }
+
+.team__slider-image:hover {
+  opacity: 1; }
 
 .team__name--active {
   display: block; }
