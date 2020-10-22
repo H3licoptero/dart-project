@@ -1116,6 +1116,8 @@ button {
   .header__video {
     max-width: 450px;
     height: 260px; }
+  .nav__block {
+    align-items: center; }
   .slider__content {
     padding: 15px 25px;
     font-size: 12px; }
@@ -1223,54 +1225,45 @@ button {
     display: flex;
     height: 30px;
     width: 40px; }
-  .nav__list {
-    position: absolute;
-    opacity: 0;
-    height: 0;
-    visibility: hidden;
-    flex-direction: column;
-    border-radius: 5px;
-    padding: 10px 20px;
-    background-color: rgba(255, 255, 255, 0.2);
-    top: 100px;
-    right: 55px;
-    transition: all 0.6s ease; }
-  .nav__list--active {
-    opacity: 1;
-    height: 122px;
-    visibility: visible;
-    transition: all 0.6s ease; }
-  .nav__list::before {
-    position: absolute;
-    content: "";
-    top: 10px;
-    width: 0;
-    height: 0;
-    border: 10px solid transparent;
-    border-bottom-color: #ffffff;
-    top: calc( 50% - 91px);
-    right: 10px;
-    opacity: 0.2; }
-  .nav__item {
-    margin-left: 0;
-    margin-bottom: 14px; }
-  .nav__item:last-child {
-    margin-bottom: 0; }
-  .nav__burger-firstLine, .nav__burger-secondLine, .nav__burger-thirdLine {
-    position: absolute;
-    top: 10px;
-    width: 35px;
-    height: 4px;
-    background-color: #fff;
-    border-radius: 5px; }
-  .nav__burger-firstLine {
-    top: 0; }
-  .nav__burger-secondLine {
-    top: 10px; }
-  .nav__burger-thirdLine {
-    top: 20px; }
-  .nav__button {
-    display: none; }
+  .nav {
+    flex-wrap: wrap; }
+    .nav__list {
+      opacity: 0;
+      height: 0;
+      visibility: hidden;
+      flex-direction: row;
+      justify-content: space-around;
+      border-radius: 5px;
+      padding: 10px 20px;
+      background-color: rgba(255, 255, 255, 0.2);
+      width: 100%;
+      transition: all 0.6s ease; }
+    .nav__list--active {
+      width: 100%;
+      opacity: 1;
+      height: 15px;
+      visibility: visible;
+      transition: all 0.6s ease; }
+    .nav__item {
+      margin-left: 0;
+      margin-bottom: 14px; }
+    .nav__item:last-child {
+      margin-bottom: 0; }
+    .nav__burger-firstLine, .nav__burger-secondLine, .nav__burger-thirdLine {
+      position: absolute;
+      top: 10px;
+      width: 35px;
+      height: 4px;
+      background-color: #fff;
+      border-radius: 5px; }
+    .nav__burger-firstLine {
+      top: 0; }
+    .nav__burger-secondLine {
+      top: 10px; }
+    .nav__burger-thirdLine {
+      top: 20px; }
+    .nav__button {
+      display: none; }
   .slider__wrapper {
     height: 330px; }
   .slider__item {
@@ -1281,11 +1274,16 @@ button {
     margin-right: 15px; }
   .contacts__name-block input,
   .contacts__mail-block input {
-    min-width: 220px; } }
+    min-width: 220px; }
+  .footer__header .footer__nav {
+    margin-top: 0;
+    margin-bottom: 0; } }
 
 @media screen and (max-width: 576px) {
   .container {
     width: 365px; }
+  .header__nav {
+    margin-bottom: 80px; }
   .tool__footer-item {
     flex-basis: 100%; }
   .contacts__name-block, .contacts__mail-block {
@@ -1313,7 +1311,33 @@ button {
     flex-wrap: wrap;
     justify-content: center;
     max-width: 300px;
-    margin: auto; } }
+    margin: auto; }
+  .slider__content p {
+    height: 60px;
+    overflow-y: auto;
+    text-overflow: ellipsis; }
+  .slider__wrapper {
+    height: 295px; }
+  .slider__image {
+    margin-right: 15px; }
+  .reviews__content {
+    margin-top: 70px; }
+  .tool__header {
+    margin-top: 70px; }
+  .button__top {
+    right: 25px; }
+  .tool__button {
+    width: 100%; }
+  .contacts__newslatter {
+    flex-wrap: wrap; }
+  .contacts__check {
+    margin-bottom: 25px; }
+  .contacts__button {
+    width: 100%; }
+  .header__btn {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 0; } }
 
 @media screen and (max-width: 375px) {
   .container {
@@ -1331,4 +1355,12 @@ button {
     width: 100%;
     min-width: 226px; }
   .button__top {
-    right: 10px; } }
+    right: 10px; }
+  .tool__button {
+    width: 100%; }
+  .contacts__newslatter {
+    flex-wrap: wrap; }
+  .contacts__check {
+    margin-bottom: 25px; }
+  .contacts__button {
+    width: 100%; } }

@@ -120,6 +120,9 @@
     &__video
       max-width: 450px
       height: 260px
+  .nav
+    &__block
+      align-items: center
   .slider
     &__content
       padding: 15px 25px
@@ -242,39 +245,26 @@
       display: flex
       height: 30px
       width: 40px
-    // &__nav
-    //   position: relative
+
   .nav
+    flex-wrap: wrap
     &__list
-      position: absolute
       opacity: 0
-      // display: none  
       height: 0
       visibility: hidden
-      flex-direction: column
+      flex-direction: row
+      justify-content: space-around
       border-radius: 5px
       padding: 10px 20px 
       background-color: rgba($light, 0.2)
-      top: 100px
-      right: 55px
+      width: 100%
       transition: all 0.6s ease 
     &__list--active
+      width: 100%
       opacity: 1
-      height: 122px
+      height: 15px
       visibility: visible
-      // display: block
       transition: all 0.6s ease 
-    &__list::before
-      position: absolute
-      content: ""
-      top: 10px
-      width: 0
-      height: 0
-      border: 10px solid transparent
-      border-bottom-color: $light
-      top: calc( 50% - 91px )
-      right: 10px 
-      opacity: 0.2
     &__item
       margin-left: 0
       margin-bottom: 14px
@@ -310,9 +300,16 @@
   .contacts__name-block input,
   .contacts__mail-block input
     min-width: 220px
+  .footer
+    &__header &__nav
+      margin-top: 0
+      margin-bottom: 0
 @media screen and ( max-width: 576px )
   .container
     width: 365px 
+  .header
+    &__nav
+      margin-bottom: 80px
   .tool
     &__footer-item
       flex-basis: 100%
@@ -339,8 +336,6 @@
     &__slider-image
       margin-right: 10px
     &__slider-image--active, .team__slider-image:hover
-      // max-width: 100%
-      // height: 5%
       border: 1px solid $light
       border: none
       box-shadow: none
@@ -350,7 +345,39 @@
       justify-content: center
       max-width: 300px
       margin: auto
-      // margin-left: 0
+  .slider
+    &__content p
+      height: 60px
+      overflow-y: auto 
+      text-overflow: ellipsis
+    &__wrapper
+      height: 295px
+    &__image
+      margin-right: 15px
+  .reviews
+    &__content
+      margin-top: 70px
+  .tool
+    &__header
+      margin-top: 70px
+  .button
+    &__top
+      right: 25px
+  .tool
+    &__button
+      width: 100%
+  .contacts
+    &__newslatter
+      flex-wrap: wrap
+    &__check
+      margin-bottom: 25px
+    &__button
+      width: 100%
+  .header
+    &__btn
+      width: 100%
+      margin-bottom: 10px
+      margin-right: 0
 @media screen and ( max-width: 375px )
   .container
     width: 310px
@@ -372,3 +399,13 @@
   .button
     &__top
       right: 10px
+  .tool
+    &__button
+      width: 100%
+  .contacts
+    &__newslatter
+      flex-wrap: wrap
+    &__check
+      margin-bottom: 25px
+    &__button
+      width: 100%
