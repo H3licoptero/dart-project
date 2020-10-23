@@ -365,6 +365,9 @@ p {
 button {
   cursor: pointer; }
 
+figure {
+  margin: unset; }
+
 .container {
   width: 1600px;
   margin: 0 auto; }
@@ -846,10 +849,10 @@ button {
 
 .team__slider-image--active {
   border-radius: 50%;
-  border: 20px solid #ffffff;
+  border: 13px solid #ffffff;
   box-shadow: 0 0 4px 0.1px #b0bec5;
   opacity: 1;
-  transform: scale(1.4); }
+  transform: scale(1.6); }
 
 .team__slider-image:hover {
   opacity: 1; }
@@ -1164,6 +1167,55 @@ button {
     width: 860px; }
   .header__btn {
     font-size: 12px; }
+  .header__item a:hover::after, .header__item a:hover {
+    width: 0;
+    color: inherit;
+    transition: none; }
+  .header__nav-button {
+    transition: none; }
+  .header__nav-button:hover {
+    color: inherit;
+    border-color: inherit;
+    transition: none;
+    background-color: inherit; }
+  .header__try {
+    transition: none; }
+  .header__try:hover {
+    background-color: #ffffff;
+    color: #061e37;
+    transition: none;
+    box-shadow: 0px 5px 5px 0 rgba(6, 30, 55, 0.15); }
+  .header__buy {
+    transition: none; }
+  .header__buy:hover {
+    background-color: #061e37;
+    color: #ffffff;
+    transition: none;
+    box-shadow: 0px 5px 5px 0 rgba(6, 30, 55, 0.15); }
+  .header__video-btn {
+    transition: none; }
+  .header__video-btn:hover {
+    transition: none;
+    background-color: #061e37;
+    box-shadow: none; }
+  .tool__button {
+    transition: none; }
+  .tool__button:hover {
+    transition: none;
+    background-color: #1de9b6; }
+  .team__social-item {
+    transition: none; }
+  .team__social-item:hover {
+    color: #90a4ae;
+    transition: none; }
+  .contacts__button {
+    transition: none; }
+  .contacts__button:hover {
+    transition: none;
+    background-color: #1de9b6; }
+  .footer__team-socials a {
+    color: #90a4ae;
+    opacity: 1; }
   .tool__footer-container {
     flex-wrap: wrap;
     width: 100%; }
@@ -1171,7 +1223,9 @@ button {
     margin: auto; }
   .tool__footer-item {
     flex-basis: 50%;
-    padding: 28px 0; } }
+    padding: 28px 0; }
+  .team__slider-image--active {
+    transform: scale(1.2); } }
 
 @media screen and (max-width: 876px) {
   .container {
