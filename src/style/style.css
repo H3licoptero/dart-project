@@ -461,6 +461,7 @@ button {
 
 .header__try {
   color: #061e37;
+  background-color: #ffffff;
   font-weight: 700; }
 
 .header__video {
@@ -943,6 +944,10 @@ button {
   width: 16px;
   border-color: #061e37; }
 
+.contacts__box {
+  display: flex;
+  align-items: center; }
+
 .footer {
   background-color: #061e37; }
   .footer__container {
@@ -1236,7 +1241,7 @@ button {
     .nav__list--active {
       width: 100%;
       opacity: 1;
-      height: 15px;
+      height: 12px;
       visibility: visible;
       transition: all 0.6s ease; }
     .nav__item {
@@ -1329,6 +1334,8 @@ button {
     margin-bottom: 25px; }
   .contacts__button {
     width: 100%; }
+  .contacts__box {
+    margin-bottom: 25px; }
   .header__btn {
     width: 100%;
     margin-bottom: 10px;
@@ -1355,7 +1362,5 @@ button {
     width: 100%; }
   .contacts__newslatter {
     flex-wrap: wrap; }
-  .contacts__check {
-    margin-bottom: 25px; }
   .contacts__button {
     width: 100%; } }

@@ -77,7 +77,6 @@ document.addEventListener("DOMContentLoaded", () => {
           }
           image[j].classList.add("team__slider-image--active");
           name[j].classList.add("team__name--active");
-          // image[j].style.transition ='transform 0.3s ease';
       });
     }
   };
@@ -183,8 +182,18 @@ document.addEventListener("DOMContentLoaded", () => {
       lineSecond = document.querySelector(".nav__burger-secondLine"),
       lineThird = document.querySelector(".nav__burger-thirdLine"),
       burger = document.querySelector(".header__burger"),
-      navList = document.querySelector(".nav__list");
-
+      navList = document.querySelector(".nav__list"),
+      navItem = document.querySelectorAll(".nav__list li");
+    function closeNav() {
+      for(let i = 0; i < navItem.length; i++) {
+        navItem[i].addEventListener("click", (event) => {
+          lineSecond.classList.toggle("second");
+          line.classList.toggle("first");
+          lineThird.classList.toggle("third");
+          navList.classList.toggle("nav__list--active");
+        });
+      }
+    };
       burger.addEventListener('click', (event) => {
         let target = event.target;
         if(target) {
@@ -197,7 +206,8 @@ document.addEventListener("DOMContentLoaded", () => {
         lineSecond.style.transition = "transform 0.3s ease";
         lineThird.style.transition = "transform 0.3s ease";
       });
-  }
+    closeNav();
+  };
 
   burger();
 });
