@@ -1,0 +1,66 @@
+.popup
+  display: none
+  visibility: hidden
+  &__container
+    display: flex
+    justify-content: center
+    max-width: 500px
+    width: 100%
+    margin: auto
+  &__content
+    max-width: 300px
+    width: 100%
+    background: linear-gradient(to right, #00b8d4, #1de9b6)
+    border-radius: 5px
+    padding: 10px 15px 60px
+  &__close
+    display: flex
+    justify-content: flex-end
+  &__logo 
+    margin: auto
+  &__btn-close
+    background-color: transparent
+    border: none
+    margin-bottom: 45px
+  &__btn-close .fas
+    transition: transform 0.3s ease
+  &__btn-close .fas:hover
+    transform: rotate(180deg)
+    transition: transform 0.3s ease
+  &__logo-link
+    filter: invert(100%) 
+    margin-bottom: 35px
+  &__form
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__form input
+    border: none 
+    border-radius: 3px
+    max-width: 350px
+    padding: 10px
+    font-size: 18px
+    font-weight: 500
+  &__username
+    margin-bottom: 15px
+  &__password 
+    margin-bottom: 25px
+  &__signin
+    background-color: $start
+    border: none
+    border-radius: 4px
+    padding: 15px 35px
+    text-transform: uppercase
+    color: $light
+  &--active
+    position: fixed
+    display: flex
+    visibility: visible
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    width: 100%
+    height: 100%
+    background-color: rgba($light, 0.5)
+    z-index: 22

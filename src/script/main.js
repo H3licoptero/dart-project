@@ -210,4 +210,29 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   burger();
+
+  const popOpen = () => {
+    const close = document.querySelector(".popup__btn-close"),
+      popup = document.querySelector(".popup"),
+      signIn = document.querySelector(".header__nav-button");
+
+    document.addEventListener('keydown', event => {
+      let target = event.target;
+      if(event.keyCode === 27) {
+        popup.classList.remove("popup--active");
+      }
+    });
+
+    popup.addEventListener('click', (event) => {
+      let target = event.target;
+      if (target.closest(".popup__btn-close") || target.matches('.popup')) {
+        popup.classList.remove("popup--active");
+      } 
+    });
+
+    signIn.addEventListener('click', () => {
+        popup.classList.add("popup--active");
+    });
+  };
+  popOpen(); 
 });
