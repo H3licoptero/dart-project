@@ -75,11 +75,11 @@
           </div>
         <form class="popup__form" action="#">
           <label for="popup-username"></label>
-          <input type="text" class="popup__username" name="popupUsername" id="popup-username">
-          <label for="popup-password"></label>
-          <input type="password" class="popup__password" name="popupPassword" id="popup-password">
+          <input type="text" class="popup__username" name="popupUsername" id="popup-username" placeholder="Enter name">
+          <label for="popup-email"></label>
+          <input type="email" class="popup__password" name="popupEmail" id="popup-email" placeholder="Enter e-mail">
           <div class="popup__btn">
-            <button class="popup__signin">sign in</button>
+            <button class="popup__signup">sign up</button>
           </div>
         </form>
       </div>
@@ -469,7 +469,7 @@
             tempor incididunt ut labore et
             dolore magna</p>
         </div>
-        <form class="contacts__form" action="#">
+        <form class="contacts__form" method="POST" action="server.php" name="contactsForm">
           <div class="contacts__name-block">
             <input class="contacts__username" name="contactsUsername" id="contacts-username" type="text"
               placeholder="First Name">
@@ -482,15 +482,15 @@
             <input class="contacts__email" name="contactsEmail" id="contacts-email" type="email" placeholder="Email">
             <label for="contacts-email" class="contacts__usermail"></label>
             <label for="contacts-phone" class="contacts__userphone"></label>
-            <input class="contacts__phone" name="contacts-phone" id="contacts-phone" type="tel" placeholder="Phone">
+            <input class="contacts__phone" name="contactsPhone" id="contacts-phone" type="tel" placeholder="Phone">
           </div>
-          <textarea class="contacts__textarea" name="contacts-textarea" id="textField" cols="30" rows="10"
+          <textarea class="contacts__textarea" name="contactsTextarea" id="textField" cols="30" rows="10"
             placeholder="Message"></textarea>
           <div class="contacts__newslatter">
             <div class="contacts__box">
               <label for="contacts-checkbox" class="contacts__check">
               </label>
-              <input class="contacts__checkbox" type="checkbox" id="contacts-checkbox" checked>
+              <input class="contacts__checkbox" name="contactsCheckbox" type="checkbox" id="contacts-checkbox" checked>
               <span class="contacts__span">subscribe to the newsletter</span>
             </div>
             <button class="contacts__button" type="submit">Send</button>

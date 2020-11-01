@@ -125,35 +125,42 @@ document.addEventListener("DOMContentLoaded", () => {
   scroll();
   
   const objectCreate = () => {
+  const form = document.querySelector(".contacts__form");
   
-  const contactsLastname = document.querySelector(".contacts__lastname");
-  const contactsUsername = document.querySelector(".contacts__username");
-  const contactsEmail = document.querySelector(".contacts__email");
-  const contactsPhone = document.querySelector(".contacts__phone");
-  const contactsMessage = document.querySelector(".contacts__textarea");
-  const contactsForm = document.querySelectorAll(".contacts__form input, .contacts__textarea"
-  );
-  
-    let obj = () => {
-     let name = contactsUsername.value,
-      lastName = contactsLastname.value,
-      email = contactsEmail.value,
-      phone = contactsPhone.value,
-      message = contactsMessage.value;
-      return {
-        "First Name": name,
-        "Last Name": lastName,
-        "Email": email,
-        "Phone": phone,
-        "Message": message,
-      };
-    };
-    let copy;
-    contactsForm.forEach(el => {
-      el.addEventListener("change", () => {
-        copy = obj();
-        console.log(copy);
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+
+      let name = form.querySelector("[name='contactsUsername']"),
+        lastName = form.querySelector('[name="contactsLastname"]'),
+        phone = form.querySelector('[name="contactsPhone"]'),
+        email = form.querySelector('[name="contactsEmail"]'),
+        textarea = form.querySelector('[name="contactsTextarea"]'),
+        subscribe = form.querySelector('[name="contactsCheckbox"]');
+
+      // let values = {
+      //   name: name.value,
+      //   lastName: lastName.value,
+      //   phone: phone.value,
+      //   email: email.value,
+      //   textarea: textarea.value,
+      //   subscribe: subscribe.checked
+      // };
+
+      
+      let formData = new FormData(form);
+      let body = {};
+
+      formData.forEach((item, value) => {
+        body[value] = item;
       });
+      console.log(body);
+      let request = new XMLHttpRequest();
+
+      request.open('POST', './server.php');
+
+      request.setRequestHeader("Content-type", 'multipart/form-data');
+
+      request.send(body);
     });
   };
   
